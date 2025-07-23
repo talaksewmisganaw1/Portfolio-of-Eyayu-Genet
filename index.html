@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EYAYU GENET | Contemporary Painter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" />
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white bg-opacity-90 shadow-sm z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-xl font-bold text-gray-900">EYAYU GENET</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link text-gray-900 hover:text-amber-500 px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="#gallery" class="nav-link text-gray-900 hover:text-amber-500 px-3 py-2 text-sm font-medium">Gallery</a>
+                        <a href="#about" class="nav-link text-gray-900 hover:text-amber-500 px-3 py-2 text-sm font-medium">About</a>
+                        <a href="#exhibitions" class="nav-link text-gray-900 hover:text-amber-500 px-3 py-2 text-sm font-medium">Exhibitions</a>
+                        <a href="#testimonials" class="nav-link text-gray-900 hover:text-amber-500 px-3 py-2 text-sm font-medium">Testimonials</a>
+                        <a href="#contact" class="nav-link text-gray-900 hover:text-amber-500 px-3 py-2 text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-900 hover:text-amber-500 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-amber-500">Home</a>
+                <a href="#gallery" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-amber-500">Gallery</a>
+                <a href="#about" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-amber-500">About</a>
+                <a href="#exhibitions" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-amber-500">Exhibitions</a>
+                <a href="#testimonials" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-amber-500">Testimonials</a>
+                <a href="#contact" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-amber-500">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 pt-32 pb-40 text-white">
+        <div class="absolute inset-0 opacity-10" style="background-image: url('https://www.transparenttextures.com/patterns/brushed-alum.png'); background-size: 300px;"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full">
+            <div class="flex flex-col lg:flex-row items-center h-full">
+                <div class="lg:w-1/2 mb-16 lg:mb-0 fade-in">
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white tracking-tight">
+                        <span class="block bg-clip-text text-transparent bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500">EYAYU GENET</span>
+                    </h1>
+                    <div class="w-32 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mb-8 rounded-full"></div>
+                    <p class="text-xl md:text-2xl mb-10 text-white/90 leading-relaxed max-w-lg font-serif italic relative pl-8 before:absolute before:left-0 before:top-0 before:h-full before:w-1 before:bg-amber-500">
+                        “Painting the spirit of culture and nature.”
+                    </p>
+                    <div class="flex flex-wrap gap-4 fade-in delay-1">
+                        <a href="#gallery" class="inline-flex items-center bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-medium py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-amber-500/30 transform hover:-translate-y-1">
+                            <i class="fas fa-palette mr-2"></i> View Gallery
+                        </a>
+                        <a href="#about" class="inline-flex items-center border-2 border-amber-400/50 hover:border-amber-400/80 text-white font-medium py-3 px-8 rounded-full transition-all duration-300 hover:bg-amber-500/10">
+                            <i class="fas fa-user mr-2"></i> About Me
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 fade-in delay-1">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-amber-400 to-amber-600 rounded-lg blur opacity-50 group-hover:opacity-70 transition duration-300"></div>
+                        <!-- https://images.unsplash.com/photo-1578926375605-eaf7559b1458?ixlib=rb-4.0.3 -->
+                        <img src="./images/acrylics/Reconciliation main.jpg" alt="Featured Artwork" class="relative rounded-lg w-full max-w-xl mx-auto border-4 border-amber-100/30 transform group-hover:scale-105 transition duration-500">
+                        <div class="absolute -bottom-4 -right-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white p-4 rounded-lg shadow-xl hidden lg:block transition-all duration-300 group-hover:-translate-y-2">
+                            <div class="text-xl font-bold">Featured Work</div>
+                            <div class="text-sm">"Reconciliation" - 2023</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-0 right-0 text-center fade-in delay-2 z-10">
+            <a href="#gallery" class="text-amber-300/80 hover:text-amber-300 transition-colors duration-300 inline-block animate-bounce">
+                <div class="w-10 h-16 rounded-full border-2 border-amber-300/30 flex items-center justify-center mx-auto">
+                    <div class="w-1 h-4 bg-amber-300 rounded-full animate-pulse"></div>
+                </div>
+                <span class="block text-xs mt-2 tracking-wider font-mono">DISCOVER MORE</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Gallery</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+                <p class="mt-6 text-gray-600 max-w-2xl mx-auto">A selection of my recent works showcasing different techniques and themes</p>
+            </div>
+            
+            <!-- Gallery Filter -->
+            <div class="flex justify-center mb-12">
+                <div class="inline-flex rounded-md shadow-sm">
+                    <button class="filter-btn px-4 py-2 text-sm font-medium rounded-l-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 active:bg-amber-100 active:text-amber-700" data-filter="all">All</button>
+                    <button class="filter-btn px-4 py-2 text-sm font-medium border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 active:bg-amber-100 active:text-amber-700" data-filter="acrylic">Acrylic</button>
+                    <!-- <button class="filter-btn px-4 py-2 text-sm font-medium border-t border-b border-gray-300 bg-white text-gray-700 hover:bg-gray-50 active:bg-amber-100 active:text-amber-700" data-filter="mixed-media">Mixed media</button> -->
+                    <button class="filter-btn px-4 py-2 text-sm font-medium rounded-r-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 active:bg-amber-100 active:text-amber-700" data-filter="mixed-media">Mixed media</button>
+                    <!-- <button class="filter-btn px-4 py-2 text-sm font-medium rounded-r-lg border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 active:bg-amber-100 active:text-amber-700" data-filter="figurative">Symbolic and figurative</button> -->
+                </div>
+            </div>
+            
+            <!-- Artworks Grid -->
+            <div id="gallery-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">   
+            </div>
+            
+            <!-- <div class="text-center mt-12">
+                <a href="#" class="inline-block border-2 border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                    View Full Portfolio
+                </a>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:flex items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                    <div class="relative">
+                        <img src="./images/edited3.jpg" alt="Eyayu Genet in hisstudio" class="rounded-lg shadow-xl w-full">
+                        
+                        <!-- <img src="https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-4.0.3" alt="Eyayu Genet in hisstudio" class="rounded-lg shadow-xl w-full"> -->
+                        <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg hidden md:block">
+                            <div class="text-amber-500 text-4xl font-bold">14+</div>
+                            <div class="text-gray-600 text-sm">Years of Experience</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">About Me</h2>
+                    <div class="w-20 h-1 bg-amber-500 mb-6"></div>
+                    <p class="text-gray-600 mb-4">I am Eyayu Genet, a painter from Ethiopia. My work is where colors meet stories—stories of my culture, my people, and the emotions that connect us all. Each stroke I make is inspired by the traditions I grew up with and the dreams I carry for the future.</p>
+                    <p class="text-gray-600 mb-4">I often paint in acrylic because it allows me to bring life and energy to the canvas. My art explores identity, spirituality, and peace, using vibrant colors and symbolic forms that speak across languages and borders</p>
+                    <p class="text-gray-600 mb-6">Through my paintings, I hope to create spaces where people pause, feel, and reflect—because art, for me, is not just to be seen. It is to be felt.</p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-start">
+                            <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-palette text-amber-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Mediums</h4>
+                                <p class="text-gray-600 text-sm">Acrylic, Mixed Media</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start row-span-3">
+                            <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-graduation-cap text-amber-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Education</h4>
+                                <p class="text-gray-600 text-sm pb-2">Bachelor's degree in Economics - Bahir Dar University</p>
+                                <p class="text-gray-600 text-sm pb-2">Bachelor of Fine Arts (Painting) - Addis Ababa University</p>
+                                <p class="text-gray-600 text-sm">Master’s Degree (MFA) - Addis Ababa University</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-trophy text-amber-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Awards</h4>
+                                <p class="text-gray-600 text-sm mb-2"><span class="pr-2">Lifetime Achievement Medal</span><span>-</span><span class="pl-2">2021</span></p>
+                                <p class="text-gray-600 text-sm">Tana social media award</p>
+
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-amber-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Based In</h4>
+                                <p class="text-gray-600 text-sm">Bahir Dar, Ethiopia</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- <a href="#" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                        Download CV
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exhibitions Section -->
+    <section id="exhibitions" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Exhibitions</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+                <p class="mt-6 text-gray-600 max-w-2xl mx-auto">Selected solo and group exhibitions showcasing my work</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- past exhibitions -->
+                <div class="bg-gray-100 rounded-lg p-8 shadow-sm border-l-4 border-amber-500">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-amber-500 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900">Past Exhibition</h3>
+                            <p class="text-gray-500 text-sm">formerly shown</p>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">First Major Solo Exhibition</h4>
+                    <p class="text-gray-600 mb-4">Featured over 70 works reflecting Ethiopian cultural values</p>
+                    <div class="flex items-center text-gray-500 mb-4">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>National Museum, Addis Ababa</span>
+                    </div>
+                    <div class="flex items-center text-gray-500 mb-4">
+                        <i class="far fa-calendar-alt mr-2"></i>
+                        <span>2015</span>
+                    </div>
+                    <!-- <a href="#" class="text-amber-500 hover:text-amber-600 font-medium inline-flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a> -->
+                </div>
+
+                <div class="bg-gray-100 rounded-lg p-8 shadow-sm border-l-4 border-amber-500">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-amber-500 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900">Past Exhibition</h3>
+                            <p class="text-gray-500 text-sm">formerly shown</p>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">Grace Center's Experience Ethiopia Event</h4>
+                    <p class="text-gray-600 mb-4">Auctioned two paintings at a cultural event</p>
+                    <div class="flex items-center text-gray-500 mb-4">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>Naples, Florida, USA</span>
+                    </div>
+                    <div class="flex items-center text-gray-500 mb-4">
+                        <i class="far fa-calendar-alt mr-2"></i>
+                        <span>2019</span>
+                    </div>
+                    <!-- <a href="#" class="text-amber-500 hover:text-amber-600 font-medium inline-flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a> -->
+                </div>
+
+                <div class="bg-gray-100 rounded-lg p-8 shadow-sm border-l-4 border-amber-500">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-amber-500 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900">Past Exhibition</h3>
+                            <p class="text-gray-500 text-sm">formerly shown</p>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">"Sugypia" – Art for the Nile</h4>
+                    <p class="text-gray-600 mb-4">Addressed environmental and cultural themes related to the Blue Nile</p>
+                    <div class="flex items-center text-gray-500 mb-4">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>Various locations</span>
+                    </div>
+                    <div class="flex items-center text-gray-500 mb-4">
+                        <i class="far fa-calendar-alt mr-2"></i>
+                        <span>2021</span>
+                    </div>
+                    <!-- <a href="#" class="text-amber-500 hover:text-amber-600 font-medium inline-flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a> -->
+                </div>
+
+                <div class="bg-gray-100 rounded-lg p-8 shadow-sm border-l-4 border-amber-500">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-amber-500 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900">Past Exhibition</h3>
+                            <p class="text-gray-500 text-sm">formerly shown</p>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">"East Chrome" Group Exhibition</h4>
+                    <p class="text-gray-600 mb-4">Showcased alongside Ethiopian artists Yonas Degefa, Nega Yilma, and Kibrom Seyoum</p>
+                    <div class="flex items-center text-gray-500 mb-4">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>Banana Hill Art Gallery, Nairobi</span>
+                    </div>
+                    <div class="flex items-center text-gray-500 mb-4">
+                        <i class="far fa-calendar-alt mr-2"></i>
+                        <span>2025</span>
+                    </div>
+                    <!-- <a href="#" class="text-amber-500 hover:text-amber-600 font-medium inline-flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a> -->
+                </div>
+
+                <!-- Current Exhibition
+                <div class="bg-gray-100 rounded-lg p-8 shadow-sm border-l-4 border-amber-500">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-amber-500 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900">Current Exhibition</h3>
+                            <p class="text-gray-500 text-sm">Now Showing</p>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">"Luminous Horizons"</h4>
+                    <p class="text-gray-600 mb-4">A collection of 24 new works exploring the boundaries of light and perception</p>
+                    <div class="flex items-center text-gray-500 mb-4">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>Modern Art Gallery, New York</span>
+                    </div>
+                    <div class="flex items-center text-gray-500 mb-4">
+                        <i class="far fa-calendar-alt mr-2"></i>
+                        <span>June 15 - August 30, 2023</span>
+                    </div>
+                    <a href="#" class="text-amber-500 hover:text-amber-600 font-medium inline-flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                Upcoming Exhibition
+                <div class="bg-gray-100 rounded-lg p-8 shadow-sm border-l-4 border-gray-300">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gray-300 text-gray-700 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="far fa-calendar-check"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900">Upcoming Exhibition</h3>
+                            <p class="text-gray-500 text-sm">Coming Soon</p>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-2">"Chromatic Dialogues"</h4>
+                    <p class="text-gray-600 mb-4">Group exhibition with three other contemporary colorists</p>
+                    <div class="flex items-center text-gray-500 mb-4">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>International Art Center, London</span>
+                    </div>
+                    <div class="flex items-center text-gray-500 mb-4">
+                        <i class="far fa-calendar-alt mr-2"></i>
+                        <span>October 10 - December 5, 2023</span>
+                    </div>
+                    <a href="#" class="text-amber-500 hover:text-amber-600 font-medium inline-flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div> -->
+            </div>
+            
+            <!-- Past Exhibitions
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Past Exhibitions</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Year</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Exhibition</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Venue</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Location</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2022</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">"Transparent Layers"</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Contemporary Art Space</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Berlin, Germany</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2021</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">"Urban Impressions"</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Metropolitan Gallery</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Chicago, USA</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2020</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">"New Perspectives"</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Art Horizons</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Tokyo, Japan</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2019</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">"Color Fields"</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Modern Art Institute</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Paris, France</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Testimonials</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+                <p class="mt-6 text-gray-600 max-w-2xl mx-auto">What collectors, critics and publications say about my work</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-500 text-2xl mr-2">"</div>
+                        <div class="text-gray-900 font-bold">Lesley Ann Irl</div>
+                    </div>
+                    <p class="text-gray-600 mb-6">I bought a beautiful painting from Eyayu when I was in Ethiopia, full of fabulous bright colours, rich Ethiopian motifs and representations of Ethiopian rural life. Eyayu is a truly talented artist. The painting is now hanging on my wall in my home in Ireland and everyone who comes to my house admires it!</p>
+                    <div class="flex items-center">
+                        <img src="./images/avatar.jpg" alt="Emily Rodriguez" class="w-10 h-10 rounded-full mr-3">
+                        <!-- <i class="fas fa-user w-10 h-10 rounded-full mr-3"></i> -->
+                        <div>
+                            <div class="text-sm font-medium text-gray-900">Lesley Ann Irl</div>
+                            <div class="text-xs text-gray-500">Trip advisor, Ireland</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-500 text-2xl mr-2">"</div>
+                        <div class="text-gray-900 font-bold">Mathew B. Oyedele</div>
+                    </div>
+                    <p class="text-gray-600 mb-6">“A US citizen and environmental specialist bought more than seven of his paintings during his exhibition at Avanti Blue Nile Hotel… the spectator was touched by his exhibited works.”</p>
+                    <div class="flex items-center">
+                        <img src="./images/Mathew B. Oyedele.jpg" alt="Sarah Johnson" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <div class="text-sm font-medium text-gray-900">Mathew B. Oyedele</div>
+                            <div class="text-xs text-gray-500">Curator and art historian</div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-500 text-2xl mr-2">"</div>
+                        <div class="text-gray-900 font-bold">InfoNile</div>
+                    </div>
+                    <p class="text-gray-600 mb-6">“Eyayu’s pieces, embedded with love for his culture, the Blue Nile and the environment, have reached many audiences.”</p>
+                    <div class="flex items-center">
+                        <img src="./images/infonile.png" alt="Michael Chen" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <div class="text-sm font-medium text-gray-900">InfoNile (publication)</div>
+                            <div class="text-xs text-gray-500">Environmental article</div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto"></div>
+                <p class="mt-6 text-gray-600 max-w-2xl mx-auto">For inquiries about available works, commissions, or exhibitions</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                            <select id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500">
+                                <option value="">Select a subject</option>
+                                <option value="purchase">Purchase Inquiry</option>
+                                <option value="commission">Commission Request</option>
+                                <option value="exhibition">Exhibition Opportunity</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div>
+                    <div class="bg-gray-100 p-8 rounded-lg h-full">
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-amber-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Studio Address</h4>
+                                    <p class="text-gray-600">Eyayu Art Gallery <br> Giorgis Road,<br>Bahir Dar, Ethiopia</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-amber-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Email</h4>
+                                    <p class="text-gray-600">yonasgetnet@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-amber-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Phone</h4>
+                                    <p class="text-gray-600">+251984624836</p>
+                                </div>
+                            </div>
+                            
+                            <!-- <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="far fa-clock text-amber-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Studio Hours</h4>
+                                    <p class="text-gray-600">By appointment only<br>Monday - Friday, 10am - 6pm</p>
+                                </div>
+                            </div> -->
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold text-gray-900 mb-4">Follow Me</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.instagram.com/eyayugenet/" class="bg-gray-200 hover:bg-amber-500 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://web.facebook.com/eyayu.genet.35?_rdc=1&_rdr#" class="bg-gray-200 hover:bg-amber-500 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://et.linkedin.com/in/eyayu-genet-shitu-17435a127" class="bg-gray-200 hover:bg-amber-500 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://www.pinterest.com/eyayugenet/" class="bg-gray-200 hover:bg-amber-500 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section
+    <section class="py-16 bg-amber-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Join My Newsletter</h2>
+            <p class="text-gray-600 mb-8">Receive updates about new works, upcoming exhibitions, and studio events</p>
+            
+            <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 border border-gray-300 rounded-lg focus:ring-amber-500 focus:border-amber-500">
+                <button type="submit" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 whitespace-nowrap">
+                    Subscribe
+                </button>
+            </form>
+            
+            <p class="text-xs text-gray-500 mt-4">I respect your privacy. Unsubscribe at any time.</p>
+        </div>
+    </section> -->
+
+    <!-- Map Section -->
+    <div class="h-96 w-full">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.5467894707613!2d37.3859875750539!3d11.58431248861788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1644d3340e320063%3A0x7887eac322a3e303!2sEyayu%20Art%20Gallery!5e0!3m2!1sen!2set!4v1753274880016!5m2!1sen!2set" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-white">Eyayu Genet</h3>
+                    <p class="text-gray-400">“Painting the spirit of culture and nature.”</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-white transition duration-300">Gallery</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
+                        <li><a href="#exhibitions" class="text-gray-400 hover:text-white transition duration-300">Exhibitions</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="https://www.instagram.com/eyayugenet/" target="_blank" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="https://web.facebook.com/eyayu.genet.35?_rdc=1&_rdr#" target="_blank" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="https://et.linkedin.com/in/eyayu-genet-shitu-17435a127" target="_blank" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="https://www.pinterest.com/eyayugenet/" target="_blank" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-pinterest-p text-xl"></i></a>
+                    </div>
+                    <p class="text-gray-400">yonasgetnet@gmail.com</p>
+                </div>
+                <div>
+                    <span class="font-bold text-white mb-4">Developed by: </span><span>Talaksew Agegnehu</span>
+                    <ul class="space-y-2 flex flex-col">
+                        <a href="tel:+251904673003" class="text-gray-400 hover:text-white transition duration-300"><i class="fas fa-phone text-base pr-4 mt-2"></i>+251 90 467 3003</a>
+                        <a href="mailto:talaksewmisganaw1@gmail.com" class="text-gray-400 hover:text-white transition duration-300"><i class="fas fa-envelope text-base pr-4"></i>talaksewmisganaw1@gmail.com</a>
+                        <div class="flex gap-3 mt-1">
+                            <a href="https://t.me/talaksewmisganaw" target="_blank" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-telegram text-xl"></i></a>
+                            <a href="https://https://wa.me/+251904673003" target="_blank" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-whatsapp text-xl"></i></a>
+                            <a href="https://www.facebook.com/talaksew.agegnehu" target="_blank" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f text-xl"></i></a>
+                            <a href="https://www.instagram.com/sewtalak/" target="_blank" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; <span id="year"></span> Eyayu Genet. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Artwork Detail Modal -->
+    <!-- <div id="artwork-modal" class="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="relative">
+                 <button id="close-modal" class="absolute top-4 right-4 bg-white rounded-full p-2 shadow-lg z-10">
+                    <i class="fas fa-times text-gray-700"></i>
+                </button> 
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="p-6">
+                        <img id="modal-image" src="" alt="" class="w-full h-auto rounded-lg shadow-md">
+                    </div>
+                    <div class="p-6">
+                        <h3 id="modal-title" class="text-2xl font-bold text-gray-900 mb-2"></h3>
+                        <p id="modal-medium" class="text-gray-600 mb-4"></p>
+                        <p id="modal-description" class="text-gray-700 mb-6"></p>
+                        
+                        <div class="mb-6">
+                            <h4 class="font-bold text-gray-900 mb-2">Details</h4>
+                            <ul class="space-y-2">
+                                <li class="flex">
+                                    <span class="text-gray-600 w-24">Size:</span>
+                                    <span id="modal-size" class="text-gray-900"></span>
+                                </li>
+                                <li class="flex">
+                                    <span class="text-gray-600 w-24">Year:</span>
+                                    <span id="modal-year" class="text-gray-900"></span>
+                                </li>
+                                <li class="flex">
+                                    <span class="text-gray-600 w-24">Availability:</span>
+                                    <span id="modal-availability" class="text-gray-900"></span>
+                                </li>
+                                <li class="flex">
+                                    <span class="text-gray-600 w-24">Price:</span>
+                                    <span id="modal-price" class="text-gray-900"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                         <div class="flex space-x-4">
+                            <button class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-6 rounded-full transition duration-300">
+                                Inquire to Purchase
+                            </button>
+                            <button class="border border-gray-300 hover:bg-gray-100 text-gray-700 font-bold py-2 px-6 rounded-full transition duration-300">
+                                Share <i class="fas fa-share-alt ml-2"></i>
+                            </button>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Modal for Gallery -->
+    <div id="galleryModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="/placeholder.svg" alt="">
+            <div id="modalCaption"></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
