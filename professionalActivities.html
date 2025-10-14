@@ -3,78 +3,377 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Artful Chronicles</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #f9f7f5;
+            color: #333;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .art-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .art-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -1.5rem;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #8b5e3c;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #e2d5c7;
+        }
+    </style>
 </head>
-<body>
-    <div id="professional-activities" class="mt-12">
-        <h3 class="text-2xl font-bold text-gray-900 mb-6">Professional Activities</h3>
-        <div class="space-y-8">
-            <!-- Teaching Experience -->
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <div class="flex items-center mb-4">
-                    <div class="bg-amber-100 p-3 rounded-full mr-4">
-                        <i class="fas fa-chalkboard-teacher text-amber-600"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-gray-900">Teaching Experience</h4>
-                        <p class="text-gray-500 text-sm">Bahir Dar University</p>
-                    </div>
-                </div>
-                <ul class="list-disc pl-8 text-gray-600 space-y-2">
-                    <li>Lecturer in the Department of Architecture, teaching various art courses</li>
-                    <li>Former Head of the Department of Architecture</li>
-                    <li>Member of various academic committees</li>
-                </ul>
+<body class="min-h-screen bg-amber-50">
+    <!-- Navigation -->
+    <nav class="bg-amber-900 text-amber-50 py-4 px-6 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">The Artful Chronicles</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-amber-200 transition">About</a>
+                <a href="#timeline" class="hover:text-amber-200 transition">Timeline</a>
+                <a href="#gallery" class="hover:text-amber-200 transition">Gallery</a>
+                <a href="#contact" class="hover:text-amber-200 transition">Contact</a>
             </div>
+            <button class="md:hidden">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+    </nav>
 
-            <!-- Lectures & Public Speaking -->
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <div class="flex items-center mb-4">
-                    <div class="bg-amber-100 p-3 rounded-full mr-4">
-                        <i class="fas fa-microphone text-amber-600"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-gray-900">Lectures & Public Speaking</h4>
+    <!-- Hero Section -->
+    <section class="relative h-96 flex items-center justify-center bg-gradient-to-r from-amber-900 to-amber-700 text-white overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <div class="container mx-auto px-6 z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">The Artful Chronicles</h1>
+            <p class="text-xl md:text-2xl mb-8">A journey through artistic milestones and creative achievements</p>
+            <a href="#timeline" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-full font-medium transition">Explore Timeline</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-6 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-amber-900">About the Artist</h2>
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/3">
+                    <img src="http://static.photos/abstract/640x360/42" alt="Artist Portrait" class="rounded-lg shadow-lg w-full h-auto">
+                </div>
+                <div class="md:w-2/3">
+                    <p class="text-lg mb-6 leading-relaxed">
+                        A passionate artist with a diverse portfolio spanning performative art shows, mural paintings, mosaic projects, and international collaborations. With works collected by national museums, embassies, and featured in Hollywood films, the artist's journey reflects a deep commitment to cultural expression and artistic innovation.
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <div class="bg-amber-100 p-4 rounded-lg text-center">
+                            <h3 class="font-bold text-amber-900 text-xl">20+</h3>
+                            <p class="text-sm">Years Experience</p>
+                        </div>
+                        <div class="bg-amber-100 p-4 rounded-lg text-center">
+                            <h3 class="font-bold text-amber-900 text-xl">50+</h3>
+                            <p class="text-sm">Projects Completed</p>
+                        </div>
+                        <div class="bg-amber-100 p-4 rounded-lg text-center">
+                            <h3 class="font-bold text-amber-900 text-xl">15+</h3>
+                            <p class="text-sm">Countries Reached</p>
+                        </div>
                     </div>
                 </div>
-                <ul class="list-disc pl-8 text-gray-600 space-y-2">
-                    <li>University Forum Lecture Series at University of Nevada, Las Vegas (UNLV) - "Bridging History and Modernity in Contemporary Ethiopian Art" (May 2016)</li>
-                    <li>Lecture and Exhibition at Boulder City Library, Nevada - "Ethiopia: Land of Colors" (May 2016)</li>
-                </ul>
-            </div>
-
-            <!-- Administrative Roles -->
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <div class="flex items-center mb-4">
-                    <div class="bg-amber-100 p-3 rounded-full mr-4">
-                        <i class="fas fa-briefcase text-amber-600"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-gray-900">Administrative Roles</h4>
-                    </div>
-                </div>
-                <ul class="list-disc pl-8 text-gray-600 space-y-2">
-                    <li>Former Head of the Department of Architecture, Bahir Dar University</li>
-                    <li>Member of various university committees including curriculum development and quality assurance</li>
-                </ul>
-            </div>
-
-            <!-- Professional Development -->
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <div class="flex items-center mb-4">
-                    <div class="bg-amber-100 p-3 rounded-full mr-4">
-                        <i class="fas fa-graduation-cap text-amber-600"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-gray-900">Professional Development</h4>
-                    </div>
-                </div>
-                <ul class="list-disc pl-8 text-gray-600 space-y-2">
-                    <li>Certified in Online Teaching & Learning Strategies from Arizona State University, AAU, BDU & e-SHE</li>
-                    <li>Participated in numerous art workshops and training programs</li>
-                </ul>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="py-16 px-6 bg-amber-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-amber-900">Professional Journey</h2>
+            <div class="relative pl-8 timeline max-w-3xl mx-auto">
+                <!-- Timeline Items -->
+                <div class="relative mb-12 timeline-item">
+                    <h3 class="text-xl font-bold mb-2 text-amber-800">Performative Art Show & Mural Art</h3>
+                    <div class="text-sm text-amber-600 mb-2">2024</div>
+                    <p class="text-gray-700">Presented a groundbreaking performative art show accompanied by large-scale mural art.</p>
+                </div>
+                
+                <div class="relative mb-12 timeline-item">
+                    <h3 class="text-xl font-bold mb-2 text-amber-800">Qatar International Art Festival</h3>
+                    <div class="text-sm text-amber-600 mb-2">2019</div>
+                    <p class="text-gray-700">Conducted a Master Class titled "Appropriating an indigenous Ethiopian art into a contemporary Space".</p>
+                </div>
+                
+                <div class="relative mb-12 timeline-item">
+                    <h3 class="text-xl font-bold mb-2 text-amber-800">Mosaic Project at Amhara Prosperity Party Gate</h3>
+                    <div class="text-sm text-amber-600 mb-2">2021</div>
+                    <p class="text-gray-700">Completed a significant mosaic project and public art installation with Leykun Art Studio.</p>
+                </div>
+                
+                <div class="relative mb-12 timeline-item">
+                    <h3 class="text-xl font-bold mb-2 text-amber-800">National Museum Collection</h3>
+                    <div class="text-sm text-amber-600 mb-2">October 26, 2015</div>
+                    <p class="text-gray-700">One of the artist's works was acquired by the National Museum, marking a significant recognition.</p>
+                </div>
+                
+                <div class="relative mb-12 timeline-item">
+                    <h3 class="text-xl font-bold mb-2 text-amber-800">National Palace Collection</h3>
+                    <div class="text-sm text-amber-600 mb-2">2008</div>
+                    <p class="text-gray-700">Artwork collected by the National Palace and Prime Minister's office, reaching the highest levels of recognition.</p>
+                </div>
+                
+                <div class="relative mb-12 timeline-item">
+                    <h3 class="text-xl font-bold mb-2 text-amber-800">Mural Paintings at Bahir Dar University</h3>
+                    <div class="text-sm text-amber-600 mb-2">2021</div>
+                    <p class="text-gray-700">Created inspiring mural paintings for day care centers across multiple campuses.</p>
+                </div>
+                
+                <div class="relative mb-12 timeline-item">
+                    <h3 class="text-xl font-bold mb-2 text-amber-800">The Bridge International Collaboration</h3>
+                    <div class="text-sm text-amber-600 mb-2">2020</div>
+                    <p class="text-gray-700">Participated in an international art project with Malaysia's National Academy of Arts during COVID-19.</p>
+                </div>
+                
+                <div class="relative mb-12 timeline-item">
+                    <h3 class="text-xl font-bold mb-2 text-amber-800">University of Oxford Webinar</h3>
+                    <div class="text-sm text-amber-600 mb-2">May 28, 2021</div>
+                    <p class="text-gray-700">Delivered a talk on the role of art in creating environmental consciousness.</p>
+                </div>
+                
+                <div class="relative mb-12 timeline-item">
+                    <h3 class="text-xl font-bold mb-2 text-amber-800">Art for Diplomacy</h3>
+                    <div class="text-sm text-amber-600 mb-2">August 29, 2024</div>
+                    <p class="text-gray-700">Presented on art for diplomacy and Nile-inspired art by SciCommX, with artwork featured as cover of The H2know.</p>
+                </div>
+                
+                <div class="relative mb-12 timeline-item">
+                    <h3 class="text-xl font-bold mb-2 text-amber-800">Art Fair Trade Workshop</h3>
+                    <div class="text-sm text-amber-600 mb-2">August 26, 2022</div>
+                    <p class="text-gray-700">Completed a workshop on Art Fair Trade organized by AoA, Korea.</p>
+                </div>
+
+                <div class="relative mb-12 timeline-item">
+                    <h3 class="text-xl font-bold mb-2 text-amber-800">Supporting youth</h3>
+                    <div class="text-sm text-amber-600 mb-2">since 2011</div>
+                    <p class="text-gray-700">Has continuously advised and volunteerd in supporting young talented students.</p>
+                </div>
+
+                <div class="relative mb-12 timeline-item">
+                    <h3 class="text-xl font-bold mb-2 text-amber-800">Mosaic art at AMC</h3>
+                    <div class="text-sm text-amber-600 mb-2">2022</div>
+                    <p class="text-gray-700">Did a project of mosaic art at Amhara Media Coorporation </p>
+                </div>
+
+                <div class="relative mb-12 timeline-item">
+                    <h3 class="text-xl font-bold mb-2 text-amber-800">Art at Embassy of Germany</h3>
+                    <div class="text-sm text-amber-600 mb-2">2022</div>
+                    <p class="text-gray-700">Art collected by Embassy of Germany in Ethiopia. </p>
+                </div>
+
+                <div class="relative mb-12 timeline-item">
+                    <h3 class="text-xl font-bold mb-2 text-amber-800">Training on Teaching-Learning Methods</h3>
+                    <div class="text-sm text-amber-600 mb-2">2021</div>
+                    <p class="text-gray-700">Successfully completed training on Teaching-Learning Methods. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 px-6 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-amber-900">Artistic Works</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Gallery Items -->
+                <div class="art-card rounded-lg overflow-hidden">
+                    <img src="http://static.photos/art/640x360/1" alt="Mural Art" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-amber-50">
+                        <h3 class="font-bold text-lg mb-2 text-amber-800">Gebeta Lehager</h3>
+                        <p class="text-gray-600">Participated at Gebeta Lehager project in Painting (Chebera Churchura and Gorgora Projects)</p>
+                    </div>
+                </div>
+                
+                <div class="art-card rounded-lg overflow-hidden">
+                    <img src="http://static.photos/art/640x360/4" alt="Cultural Center Art" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-amber-50">
+                        <h3 class="font-bold text-lg mb-2 text-amber-800">Cultural Center Murals & Easels</h3>
+                        <p class="text-gray-600">Various hotels and cultural centers (2016-2019)</p>
+                    </div>
+                </div>
+                
+                <div class="art-card rounded-lg overflow-hidden">
+                    <img src="http://static.photos/art/640x360/5" alt="Live Painting" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-amber-50">
+                        <h3 class="font-bold text-lg mb-2 text-amber-800">German Embassy Live Painting</h3>
+                        <p class="text-gray-600">Performance for Germany's 32nd unification anniversary (2022)</p>
+                    </div>
+                </div>
+
+                <div class="art-card rounded-lg overflow-hidden">
+                    <img src="http://static.photos/art/640x360/5" alt="Live Painting" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-amber-50">
+                        <h3 class="font-bold text-lg mb-2 text-amber-800">Covers of Direct coffee</h3>
+                        <p class="text-gray-600">Some of his arts become a cover of a famous brand in switzerland and Germany named Direct coffee. </p>
+                    </div>
+                </div>
+
+                <div class="art-card rounded-lg overflow-hidden">
+                    <img src="http://static.photos/art/640x360/5" alt="Live Painting" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-amber-50">
+                        <h3 class="font-bold text-lg mb-2 text-amber-800">Art for diplomacy</h3>
+                        <p class="text-gray-600">Presented on art for diplomacy and Nile inspieres art by SciCommX. His art becomes a cover of The H2know second Episode. (29 Augest 2024)</p>
+                    </div>
+                </div>
+                
+                <!-- <div class="art-card rounded-lg overflow-hidden">
+                    <img src="http://static.photos/art/640x360/6" alt="Public Art" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-amber-50">
+                        <h3 class="font-bold text-lg mb-2 text-amber-800">Public Art Installations</h3>
+                        <p class="text-gray-600">Various public spaces and institutions</p>
+                    </div>
+                </div> -->
+
+                <div class="art-card rounded-lg overflow-hidden">
+                    <img src="http://static.photos/art/640x360/2" alt="Mosaic Project" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-amber-50">
+                        <h3 class="font-bold text-lg mb-2 text-amber-800">Art part of hollwood movie</h3>
+                        <p class="text-gray-600">One of his arts has been selected to be part of the Holly wood movie filming named Undying  which has been filming in Canada. (23 Nov 2018)</p>
+                    </div>
+                </div>
+
+                <div class="art-card rounded-lg overflow-hidden">
+                    <img src="http://static.photos/art/640x360/3" alt="International Collaboration" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-amber-50">
+                        <h3 class="font-bold text-lg mb-2 text-amber-800">Arts for 'Design for climate'</h3>
+                        <p class="text-gray-600">The Artist was one of the winning designe for the intiative to contribute “Designe for Climate“, also donate his arts to support the fund to protect Water resources in Africa (2020)</p>
+                    </div>
+                </div>
+                
+                <div class="art-card rounded-lg overflow-hidden">
+                    <img src="http://static.photos/art/640x360/3" alt="International Collaboration" class="w-full h-64 object-cover">
+                    <div class="p-4 bg-amber-50">
+                        <h3 class="font-bold text-lg mb-2 text-amber-800">Designs for BDU</h3>
+                        <p class="text-gray-600">Designed logo of 50th Aniversory of BDU collage of Education and Behavioral Scinces, also Designed for BDU Institute of Amharic Language development and volunteered in design of Ambulance for Tibebe Ghion. (2022,2018,2020)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 bg-amber-100">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12 text-amber-900">Get In Touch</h2>
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <form>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                        <input type="text" id="subject" class="w-full px-4 py-2 border border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 mb-2">Message</label>
+                        <textarea id="message" rows="5" class="w-full px-4 py-2 border border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-amber-700 hover:bg-amber-800 text-white py-3 px-6 rounded-lg font-medium transition">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-amber-900 text-amber-50 py-8 px-6">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold mb-2">The Artful Chronicles</h2>
+                    <p class="text-amber-200">Documenting a journey of artistic excellence</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-amber-200 hover:text-white transition">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" class="text-amber-200 hover:text-white transition">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="#" class="text-amber-200 hover:text-white transition">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="#" class="text-amber-200 hover:text-white transition">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-amber-800 mt-8 pt-8 text-center text-amber-200">
+                <p>&copy; 2025 The Artful Chronicles. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Animate timeline items on scroll
+        const timelineItems = document.querySelectorAll('.timeline-item');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateX(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        timelineItems.forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateX(-20px)';
+            item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(item);
+        });
+    </script>
 </body>
 </html>
