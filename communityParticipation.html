@@ -45,10 +45,10 @@
                                 <p class="text-gray-500 text-sm">2021 • 1 year</p>
                             </div>
                         </div>
-                        <p class="text-gray-600 mb-6">Volunteered at Tibebe Ghion specialized Hospital creating mural paintings for both interior and exterior of the Pediatric ward to create a healing environment for children.</p>
+                        <p class="text-gray-600 mb-6">Volunteered at Tibebe Ghion specialized Hospital creating mural paintings for both interior and exterior of the Pediatric ward to create a healing environment.</p>
                         <div class="flex items-center text-gray-500">
                             <i class="fas fa-users mr-2"></i>
-                            <span class="text-sm">Impact: Hundreds of pediatric patients and staff</span>
+                            <span class="text-sm">Impact: Numerous pediatric patients and staff</span>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                                 <p class="text-gray-500 text-sm">2020 • 2 weeks</p>
                             </div>
                         </div>
-                        <p class="text-gray-600 mb-6">Participated in volunteer mural project at Lalibela Primary School through the Erick Bloom initiative, bringing art education to rural students.</p>
+                        <p class="text-gray-600 mb-6">Participated in volunteer mural project at Lalibela Primary School through the Erick Bloom initiative.</p>
                         <div class="flex items-center text-gray-500">
                             <i class="fas fa-users mr-2"></i>
                             <span class="text-sm">Impact: Entire school community</span>
@@ -152,6 +152,66 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Project 7 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-amber-500 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fa fa-drafting-compass"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Design for Architecture Dept.</h3>
+                                <p class="text-gray-500 text-sm">2014 • 1 month and 2 weeks</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">Community service engagement by Recoloring and designing the department of Architecture </p>
+                        <div class="flex items-center text-gray-500">
+                            <i class="fas fa-users mr-2"></i>
+                            <span class="text-sm">Impact: the whole department community </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-amber-500 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fa fa-donate"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Donation for aid</h3>
+                                <p class="text-gray-500 text-sm">Feb 5, 2021</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">My donation of a painting to wonfel Aid raises more than $40000 to build a school in Amhara region.</p>
+                        <div class="flex items-center text-gray-500">
+                            <i class="fas fa-users mr-2"></i>
+                            <span class="text-sm">Impact: community members of the aid</span>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Project 9 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-amber-500 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fa fa-hands-helping"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">International volunteer work</h3>
+                                <p class="text-gray-500 text-sm">2018</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">I made an International volunteer work for Roster international for Kelown General Hospital which raises $5000</p>
+                        <div class="flex items-center text-gray-500">
+                            <i class="fas fa-users mr-2"></i>
+                            <span class="text-sm">Impact: community of Kelowna General Hospital</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -161,19 +221,47 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-3 gap-8 text-center">
                 <div class="p-6">
-                    <div class="text-4xl font-bold mb-2">10+</div>
+                    <div class="text-4xl font-bold mb-2 counting" data-target="10" data-starting="0" data-speed="200">1</div>
                     <div class="text-xl">Community Projects</div>
                 </div>
                 <div class="p-6">
-                    <div class="text-4xl font-bold mb-2">$75,000+</div>
+                    <div class="text-4xl font-bold mb-2 counting" data-target="75000" data-starting="74500" data-speed="4"></div>
                     <div class="text-xl">Raised for Causes</div>
                 </div>
                 <div class="p-6">
-                    <div class="text-4xl font-bold mb-2">1000+</div>
+                    <div class="text-4xl font-bold mb-2">Numerous</div>
                     <div class="text-xl">Lives Impacted</div>
                 </div>
             </div>
         </div>
     </section>
 </body>
+<script>
+    const counters = document.querySelectorAll('.counting');
+
+    const startCount = (el) => {
+    let count = +el.dataset.starting;
+    const target = +el.dataset.target;
+    const speed = +el.dataset.speed;
+    const timer = setInterval(() => {
+        count++;
+        el.textContent = count;
+        if (count >= target) {
+            clearInterval(timer);
+            el.textContent = `${count}+`;
+        };
+    }, speed);
+    };
+
+    const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        startCount(entry.target);
+        observer.unobserve(entry.target);
+        }
+    });
+    });
+
+    counters.forEach(c => observer.observe(c));
+</script>
 </html>
