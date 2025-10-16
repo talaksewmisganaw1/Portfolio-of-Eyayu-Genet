@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyayu Genet - Art Exhibitions</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <style>
+        .exhibition-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(245, 158, 11, 0.1), 0 10px 10px -5px rgba(245, 158, 11, 0.1);
+        }
+        .hero-pattern {
+            background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+</style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <div id="vanta-bg" class="fixed inset-0 -z-10 opacity-20"></div>
+    
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <i data-feather="palette" class="text-amber-600"></i>
+<h1 class="text-xl font-bold text-gray-800">Eyayu Genet</h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#solo" class="text-gray-600 hover:text-amber-600 transition">Solo Exhibitions</a>
+                    <a href="#group" class="text-gray-600 hover:text-amber-600 transition">Group Exhibitions</a>
+                    <a href="#international" class="text-gray-600 hover:text-amber-600 transition">International</a>
+</nav>
+                <button class="md:hidden">
+                    <i data-feather="menu" class="text-gray-600"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-pattern bg-gradient-to-r from-orange-50 to-white-50 py-20 px-6">
+<div class="container mx-auto max-w-4xl text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Artistic Journeys Across Continents</h1>
+            <p class="text-xl text-gray-600 mb-8">Exploring Eyayu Genet's vibrant exhibitions from Ethiopia to the world</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#solo" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-full transition shadow-md">View Exhibitions</a>
+                <a href="#international" class="border-2 border-amber-600 text-amber-600 hover:bg-amber-50 px-6 py-3 rounded-full transition">Global Shows</a>
+            </div>
+</div>
+    </section>
+
+    <!-- Solo Exhibitions -->
+    <section id="solo" class="py-16 px-6">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Solo Exhibitions</h2>
+                <div class="w-20 h-1 bg-amber-600 mx-auto"></div>
+</div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Domestic Solo -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden exhibition-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="home" class="text-amber-500 mr-2"></i>
+<h3 class="text-xl font-semibold text-gray-800">Domestic Solo Exhibitions</h3>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-amber-100 pl-4">
+<h4 class="font-medium text-gray-800">Land of colors: Ethiopia</h4>
+                                <p class="text-gray-600">National Museum Of Ethiopia • Oct 20-26, 2015</p>
+                            </div>
+                            <div class="border-l-4 border-amber-100 pl-4">
+                                <h4 class="font-medium text-gray-800">'Nequt' ነቁጥ</h4>
+                                <p class="text-gray-600">Guramayne Art Center • March 9-30, 2018</p>
+                            </div>
+                            <div class="border-l-4 border-amber-100 pl-4">
+                                <h4 class="font-medium text-gray-800">Solo Art Exhibition of Eyayu Genet</h4>
+                                <p class="text-gray-600">Amhara Regional Peoples Memorial Office Art Gallery • Apr 25-May 25, 2011</p>
+                            </div>
+                            <div class="border-l-4 border-amber-100 pl-4">
+                                <h4 class="font-medium text-gray-800">Art of Bahir Dar 1</h4>
+                                <p class="text-gray-600">Avanti Blue Nile • Feb 16-Mar 1, 2013</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- International Solo -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden exhibition-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="globe" class="text-amber-500 mr-2"></i>
+<h3 class="text-xl font-semibold text-gray-800">International Solo Exhibitions</h3>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-amber-100 pl-4">
+                                <h4 class="font-medium text-gray-800">Ethiopia:Land of Colors</h4>
+                                <p class="text-gray-600">UNLV Grant hall art gallery, USA • May 9-June 3, 2016</p>
+                            </div>
+                            <div class="border-l-4 border-amber-100 pl-4">
+                                <h4 class="font-medium text-gray-800">Bridging History and Modernity in Ethiopian Contemporary Art </h4>
+                                <p class="text-gray-600">Barrick Museum, USA • May 3, 2016</p>
+                            </div>
+                            <div class="border-l-4 border-amber-100 pl-4">
+                                <h4 class="font-medium text-gray-800">Ethiopia:Land of Color</h4>
+                                <p class="text-gray-600">GrantHall academic Art Gallery, USA • May 09-June 03, 2016</p>
+                            </div>
+                            <div class="border-l-4 border-amber-100 pl-4">
+                                <h4 class="font-medium text-gray-800">Ethiopia:The Land of colors</h4>
+                                <p class="text-gray-600">Boulder city library, USA • May 23, 2016</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Group Exhibitions -->
+    <section id="group" class="py-16 px-6 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Group Exhibitions</h2>
+                <div class="w-20 h-1 bg-amber-600 mx-auto"></div>
+</div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Domestic Group -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden exhibition-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="users" class="text-amber-500 mr-2"></i>
+<h3 class="text-xl font-semibold text-gray-800">Domestic Group Exhibitions</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-medium text-gray-800">Art of Africa AOA22</h4>
+                                <p class="text-gray-600">Abrak Art gallery, Addis Ababa • Dec 13-28, 2022</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Patriotism</h4>
+                                <p class="text-gray-600">All art Addis Art Gallery • May 3-Jun 2, 2022</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Adwa</h4>
+                                <p class="text-gray-600">ET-Metro Art Gallery • Mar 2-12, 2024</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Four Freedoms Art contest And Exhibition</h4>
+                                <p class="text-gray-600">US Embassy • Jan 13, 2011</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Academic Exhibition of graduation project</h4>
+                                <p class="text-gray-600">Alle school of fine arts • Oct 11-Dec 1, 2011</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Domestic Group Continued -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden exhibition-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="users" class="text-amber-500 mr-2 opacity-0"></i>
+                            <h3 class="text-xl font-semibold text-gray-800 opacity-0">Continuation</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-medium text-gray-800">Graduating Students Show</h4>
+                                <p class="text-gray-600">Alliance Ethio-francaise • Nov 9-24, 2011</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Group Show Contest</h4>
+                                <p class="text-gray-600">Goethe Institute • 2009</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Zikre Adwa</h4>
+                                <p class="text-gray-600">Avanti Blue Nile • Mar 2-19</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800">Art Of Ethiopia</h4>
+                                <p class="text-gray-600">Avanti Blue Nile • May 1-Jun 6, 2014</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- International Group Exhibitions -->
+    <section id="international" class="py-16 px-6">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">International Group Exhibitions</h2>
+                <div class="w-20 h-1 bg-amber-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Eyayu Genet's art has traveled across continents, showcasing Ethiopian contemporary art globally</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden exhibition-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="map-pin" class="text-amber-500 mr-2"></i>
+                            <h3 class="text-lg font-semibold text-gray-800">5th Paris Art Fair</h3>
+                        </div>
+                        <p class="text-gray-600">UNESCO of Achaia & Ethiopian Embassy in Paris, France • Jan 25-30, 2020</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden exhibition-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="map-pin" class="text-amber-500 mr-2"></i>
+                            <h3 class="text-lg font-semibold text-gray-800">Qatar International Festival</h3>
+                        </div>
+                        <p class="text-gray-600">Katara Cultural Village, Doha, Qatar • Nov 1-5, 2019</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden exhibition-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="map-pin" class="text-amber-500 mr-2"></i>
+                            <h3 class="text-lg font-semibold text-gray-800">Art lab 2019</h3>
+                        </div>
+                        <p class="text-gray-600">Seyna Art Gallery, Uganda • Jul 26-Aug 26, 2019</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden exhibition-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="map-pin" class="text-amber-500 mr-2"></i>
+                            <h3 class="text-lg font-semibold text-gray-800">You have two cows</h3>
+                        </div>
+                        <p class="text-gray-600">Kalmar Museum, Sweden • Dec 2, 2017-Jan 28, 2018</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden exhibition-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="map-pin" class="text-amber-500 mr-2"></i>
+                            <h3 class="text-lg font-semibold text-gray-800">The Bridge</h3>
+                        </div>
+                        <p class="text-gray-600">National Academy of Arts, Malaysia • Sep 15-Dec 31, 2020 (Virtual)</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden exhibition-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="map-pin" class="text-amber-500 mr-2"></i>
+                            <h3 class="text-lg font-semibold text-gray-800">C.U.C.B.A Virtual Show</h3>
+                        </div>
+                        <p class="text-gray-600">C.U.C.B.A Carlos Sanchez Gallery, Mexico • Aug 28, 2024 (Virtual)</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md overflow-hidden exhibition-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="map-pin" class="text-amber-500 mr-2"></i>
+                            <h3 class="text-lg font-semibold text-gray-800">World Summit of The Arts for peace and Life</h3>
+                        </div>
+                        <p class="text-gray-600">Ecuador • March 22, 2018</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden exhibition-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="map-pin" class="text-amber-500 mr-2"></i>
+                            <h3 class="text-lg font-semibold text-gray-800">International Marathon Contemporary Art </h3>
+                        </div>
+                        <p class="text-gray-600">Milan ,Italy • Dec , 2021 </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden exhibition-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="map-pin" class="text-amber-500 mr-2"></i>
+                            <h3 class="text-lg font-semibold text-gray-800">Universal Art and creativity</h3>
+                        </div>
+                        <p class="text-gray-600">Colombia • Sept 23 - Oct 2 </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md overflow-hidden exhibition-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i data-feather="map-pin" class="text-amber-500 mr-2"></i>
+                            <h3 class="text-lg font-semibold text-gray-800">Univerasal Consortium of the Carlos Sanchez </h3>
+                        </div>
+                        <p class="text-gray-600">Italy • Dec 18, 2021 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 px-6 bg-amber-600 text-white">
+<div class="container mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold mb-2">8</div>
+                    <div class="text-xl">Solo Exhibitions</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">9</div>
+                    <div class="text-xl">Domestic Group Shows</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">10</div>
+                    <div class="text-xl">International Exhibitions</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 px-6">
+        <div class="container mx-auto">
+            <div class="md:flex justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-feather="palette" class="text-amber-400"></i>
+<h3 class="text-xl font-bold">Eyayu Genet</h3>
+                    </div>
+                    <p class="text-gray-400 max-w-md">Celebrating Ethiopian art and culture through vibrant exhibitions worldwide</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="mail"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2024 Eyayu Genet Art Exhibitions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        VANTA.NET({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xd97706,
+            backgroundColor: 0xf8fafc,
+points: 10.00,
+            maxDistance: 22.00
+        });
+    </script>
+    <script>feather.replace();</script>
+</body>
+</html>
